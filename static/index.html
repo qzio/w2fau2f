@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2fa using u2f</title>
+		<link rel="stylesheet" href="/style.css" type="text/css">
+		<script type="text/javascript" src="/u2f-api.js"></script>
+		<script type="text/javascript" src="/app.js"></script>
+	</head>
+	<body>
+		<div id="page">
+			<h1>2fa!</h1>
+			<div id="content">
+				<button id="registerBtn">register</button>
+				<button id="loginBtn">login</button>
+        <div id="msg" class="hidden">start</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(e) {
+			init();
+		});
+	</script>
+</html>
