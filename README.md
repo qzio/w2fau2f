@@ -17,7 +17,7 @@ Also, see [#todo](#todo)
 ## Usage
 
 The idea is to run `w2fau2f` on your vpn server node.
-Preferrable used with [wireguard](https://wireguard.com) but should probably work ok with openvpn or similar.
+Preferable used with [wireguard](https://wireguard.com) but should probably work ok with openvpn or similar.
 
 w2fau2f assumes your vpn setup is as follows:
 
