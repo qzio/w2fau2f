@@ -17,11 +17,11 @@ Also, see [#todo](#todo)
 ## Dependencies
 
 - [u2f](https://github.com/tstranex/u2f) (mit license)
-- [go-iptables](github.com/coreos/go-iptables/iptables) (apache 2.0 license)
+- [go-iptables](https://github.com/coreos/go-iptables/) (apache 2.0 license)
 
 ## Usage
 
-The idea is to run `w2fau2f` on your vpn server node.
+The idea is to run `w2fau2f` on your (linux) vpn server node.
 Preferable used with [wireguard](https://wireguard.com) but should probably work ok with openvpn or similar.
 
 w2fau2f assumes your setup is as follows:
