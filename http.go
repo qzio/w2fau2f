@@ -5,12 +5,9 @@ import (
 	"log"
 	"net/http"
 	"strings"
-	"u2f"
-)
 
-var challenge *u2f.Challenge
-var registrations []u2f.Registration
-var counter uint32
+	"github.com/tstranex/u2f"
+)
 
 type httpMessage struct {
 	Message   string

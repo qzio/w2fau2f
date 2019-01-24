@@ -3,7 +3,8 @@ package main
 import (
 	"errors"
 	"log"
-	"u2f"
+
+	"github.com/tstranex/u2f"
 )
 
 // NewU2FRegReq returns a new registration request struct
@@ -14,9 +15,10 @@ func NewU2FRegReq(ip string) (*u2f.WebRegisterRequest, error) {
 		return nil, err
 	}
 
+	var regs = []u2f.Registration{}
 	// store challenge to be able to save a completed registration request challenge response
 	SaveChallenge(ip, chl)
-	u2fReq := u2f.NewWebRegisterRequest(chl, registrations)
+	u2fReq := u2f.NewWebRegisterRequest(chl, regs)
 	log.Printf("registerRequest: %+v", u2fReq)
 	return u2fReq, nil
 }

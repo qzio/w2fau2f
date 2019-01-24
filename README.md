@@ -90,7 +90,7 @@ A few issues that's in the way for a 0.1.0 release:
 
 ## Licence
 
-MIT]
+MIT
 
 ## Contribute
 

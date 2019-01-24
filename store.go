@@ -13,7 +13,8 @@ import (
 	"net"
 	"os"
 	"strings"
-	"u2f"
+
+	"github.com/tstranex/u2f"
 )
 
 type miniReg struct {
